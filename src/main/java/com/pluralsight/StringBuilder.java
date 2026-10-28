@@ -12,27 +12,41 @@ public class StringBuilder {
         System.out.print("Full name: ");
         String fullName = scanner.nextLine();
 
-        //asked the question to
+        //asked the question to the user.
         System.out.print("Enter Billing Street: ");
-        String street = scanner.nextLine();
+        String billingStreet = scanner.nextLine();
 
         System.out.print("Enter Billing City: ");
-        String city = scanner.nextLine();
+        String billingCity = scanner.nextLine();
 
         System.out.print("Enter Billing State: ");
-        String state = scanner.nextLine();
+        String billingState = scanner.nextLine();
 
         System.out.print("Enter Billing Zip: ");
-        String zip = scanner.nextLine();
-
-
-        System.out.println(fullName + '\n'); //sout the name
+        String billingzip = scanner.nextLine();
 
         //adds the address to the string builder.
-        address.append( "Billing Street: ").append(street).append("\n");
-        address.append(city);
-        address.append(state);
-        address.append(zip);
+        address.append("Billing address:\n");
+        address.append(billingStreet).append("\n");
+        address.append(billingCity).append(",").append(" ");
+        address.append(billingState).append(" ");
+        address.append(billingzip);
 
+        //System.out.println(address);
+
+        //asks question about the shipping address.
+        System.out.print("Enter Shipping  Street: ");
+        String shippingStreet = scanner.nextLine();
+
+        System.out.print("Enter Shipping  City: ");
+        String shippingCity = scanner.nextLine();
+
+        System.out.print("Enter Shipping  State: ");
+        String shippingState = scanner.nextLine();
+
+        System.out.print("Enter Shipping  Zip: ");
+        String shippingZip = scanner.nextLine();
     }
 }
+
+
