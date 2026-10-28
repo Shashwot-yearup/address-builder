@@ -30,12 +30,10 @@ public class StringBuilder {
         address.append(billingStreet).append("\n");
         address.append(billingCity).append(",").append(" ");
         address.append(billingState).append(" ");
-        address.append(billingzip);
-
-        //System.out.println(address);
+        address.append(billingzip).append("\n\n");
 
         //asks question about the shipping address.
-        System.out.print("Enter Shipping  Street: ");
+        System.out.print("\nEnter Shipping  Street: ");
         String shippingStreet = scanner.nextLine();
 
         System.out.print("Enter Shipping  City: ");
@@ -46,6 +44,18 @@ public class StringBuilder {
 
         System.out.print("Enter Shipping  Zip: ");
         String shippingZip = scanner.nextLine();
+
+        //adds the shipping address to the string builder.
+        address.append("Shipping address:\n");
+        address.append(shippingStreet).append("\n");
+        address.append(shippingCity).append(",").append(" ");
+        address.append(shippingState).append(" ");
+        address.append(shippingZip);
+
+        //sout the final output
+        System.out.println(" ");
+        System.out.println(fullName + "\n");
+        System.out.println(address);
     }
 }
 
